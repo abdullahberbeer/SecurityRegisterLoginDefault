@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Kayıt onayı";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+           Eposta adresinize bir aktivasyon linki gönderdik sisteme giriş yapabilmek için lütfen eposta adresinize gelen linke tıklayınız..
+</p>
+    }
+    else
+    {
+<p>
+            Hesabınızı onaylamak için lütfen e-postanızı kontrol edin.
+</p>
+    }
+}
+
